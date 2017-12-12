@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_getstarted"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary"
+    tools:context="dbz.com.unite.getstarted"
+    >
+    <Button
+        android:text="GET STARTED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Registerbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <Button
+        android:text="SIGN IN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Registerbtn"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/SignInbtn"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"
+        android:background="@android:color/white"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:text="One App Many Languages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Unite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="125dp"
+        app:srcCompat="@drawable/trimv"
+        android:layout_above="@+id/textView"
+        android:layout_alignEnd="@+id/textView2" />
+
+</RelativeLayout>

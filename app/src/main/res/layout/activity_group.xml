@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Create A group"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/group_name"
+        android:layout_alignBottom="@+id/group_name"
+        android:layout_alignStart="@+id/textView11"
+        android:text="Group Name:"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter a group Name..."
+        android:inputType="textPersonName"
+        android:layout_above="@+id/group_password"
+        android:layout_alignStart="@+id/group_password"
+        android:layout_marginBottom="93dp" />
+
+    <EditText
+        android:id="@+id/group_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter here..."
+        android:inputType="textPassword"
+        android:layout_marginBottom="80dp"
+        android:layout_above="@+id/group_create"
+        android:layout_alignEnd="@+id/group_create" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/group_password"
+        android:layout_alignBottom="@+id/group_password"
+        android:layout_alignStart="@+id/group_create"
+        android:text="Group Password:"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/group_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorPrimary"
+        android:text="Create"
+        android:layout_marginBottom="15dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />/>
+</RelativeLayout>

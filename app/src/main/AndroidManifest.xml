@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dbz.com.unite">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ranicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".getstarted"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignIn"
+            android:parentActivityName=".getstarted"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chat"
+            android:parentActivityName=".getstarted"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".navmain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".facetoface"
+            android:screenOrientation="portrait" />
+        <activity android:name=".livechat" />
+        <activity
+            android:name=".group_chat"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".user_availability"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".notify_userup"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".settings" />
+    </application>
+
+</manifest>

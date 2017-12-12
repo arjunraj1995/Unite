@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="dbz.com.unite.settings">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+        <android.support.v7.widget.Toolbar
+            android:layout_height="wrap_content"
+            android:id="@+id/settingsToolbar"
+            android:layout_width="match_parent"
+
+            />
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="70dp"
+        android:text="Translations :  "
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change language:  "
+        android:textColor="@color/colorAccent"
+        android:layout_below="@+id/toggleButtonset"
+        android:layout_toStartOf="@+id/spinnerset"
+        android:layout_marginTop="57dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:text="Old Password :"
+        android:textColor="@color/colorAccent"
+        android:layout_above="@+id/change_pass"
+        android:layout_alignStart="@+id/textView13" />
+
+    <Switch
+        android:id="@+id/toggleButtonset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView12"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="47dp"
+    />
+
+    <EditText
+        android:id="@+id/old_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView14"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:hint="Enter here..."
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHANGE CURRENT PASSWORD"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_above="@+id/old_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Password :"
+        android:textColor="@color/colorAccent"
+        android:layout_above="@+id/change_pass"
+        android:layout_alignEnd="@+id/textView14"
+        android:layout_marginBottom="39dp" />
+
+    <EditText
+        android:id="@+id/new_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter here..."
+        android:inputType="textPassword"
+        android:layout_alignBaseline="@+id/textView16"
+        android:layout_alignBottom="@+id/textView16"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:id="@+id/spinnerset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_toEndOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/change_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="Change"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView16"
+        android:layout_marginBottom="24dp" />
+</RelativeLayout>

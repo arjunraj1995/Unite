@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Unite</string>
+    <string name="title_activity_usertabs">usertabs</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_user_main">userMain</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_navdrawer">navdrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="langs_sup">
+        <item>ARABIC</item>
+        <item>BULGARIAN</item>
+        <item>CATALAN</item>
+        <item>CHINESE</item>
+        <item>CZECH</item>
+        <item>DANISH</item>
+        <item>DUTCH</item>
+        <item>ENGLISH</item>
+        <item>ESTONIAN</item>
+        <item>FINNISH</item>
+        <item>FRENCH</item>
+        <item>GERMAN</item>
+        <item>GREEK</item>
+        <item>HINDI</item>
+        <item>HMONG_DAW</item>
+        <item>HUNGARIAN</item>
+        <item>INDONESIAN</item>
+        <item>ITALIAN</item>
+        <item>JAPANESE</item>
+        <item>KOREAN</item>
+        <item>LATVIAN</item>
+        <item>LITHUANIAN</item>
+        <item>NORWEGIAN</item>
+        <item>POLISH</item>
+        <item>PORTUGUESE</item>
+        <item>ROMANIAN</item>
+        <item>RUSSIAN</item>
+        <item>SLOVAK</item>
+        <item>SLOVENIAN</item>
+        <item>SPANISH</item>
+        <item>SWEDISH</item>
+        <item>THAI</item>
+        <item>TURKISH</item>
+        <item>UKRAINIAN</item>
+        <item>VIETNAMESE</item>
+    </string-array>
+</resources>

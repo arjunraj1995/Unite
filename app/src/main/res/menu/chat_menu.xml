@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add_con"
+        android:icon="@drawable/group_add"
+        android:title="Add to Contacts..."
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/tran_menu"
+        android:checkable="true"
+        android:icon="@drawable/ic_translate_black_24dp"
+        android:title="Translations"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/notuser"
+        android:icon="@drawable/ic_notifications_active_black_24dp"
+        android:title="Notify User"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/refmenu"
+        android:icon="@drawable/ic_refresh_black_24dp"
+        android:title="Refresh"
+        app:showAsAction="never" />
+</menu>
